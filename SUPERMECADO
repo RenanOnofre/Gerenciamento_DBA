@@ -1,0 +1,19 @@
+SHOW DATABASES;  //Apresenat os Banco de Dados
+
+create database SUPERMERCADO;//Cria um Banco de Dados
+
+USE SUPERMERCADO; //Seleciona o Banco de Dados para trabalhar 
+
+create table Estoque( //cria a tabela
+    -> ID int not null, 
+    -> NomeProduto varchar(255) not null,
+    -> Quantidade int,
+    -> PRIMARY KEY (ID) //torna o ID em chave primária
+    -> );
+
+//Inserir valores na tabela:
+INSERT INTO estoque (ID, NomeProduto, Quantidade) VALUES (1, "Macarrao", 30);
+INSERT INTO estoque (ID, NomeProduto, Quantidade) VALUES (2, "Feijao", 100);
+INSERT INTO estoque (ID, NomeProduto, Quantidade) VALUES (3, "Arroz", 150);
+
+SELECT * FROM Estoque; //Apresenta a tabela como um todo.
